@@ -7,11 +7,9 @@ elements based on a factor.
 from typing import Tuple, List
 
 
-def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
-    """
-    Repeats elements in a tuple based on the provided factor and returns a list
-    """
-    zoomed_in: List[int] = [
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """Zoom in on an array by repeating each element factor times."""
+    zoomed_in: List = [
         item for item in lst
         for _ in range(factor)
     ]
