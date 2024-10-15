@@ -5,6 +5,7 @@ import asyncio
 import random
 from typing import Generator
 
+
 async def async_generator() -> Generator[float, None, None]:
     """Yield a random float between 0 and 10 asynchronously."""
     for _ in range(10):
